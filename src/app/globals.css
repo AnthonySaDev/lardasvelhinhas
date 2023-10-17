@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/introT.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Intro', sans-serif;
+  scroll-behavior: smooth !important;
+}
+main{
+  overflow: auto !important;
+  scroll-behavior: smooth !important;
+}
+a {
+  scroll-behavior: smooth !important;
+}
+
+.headerClass{
+  background: rgba(130, 153, 149, 0.51);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 3px solid white;
+}
+
+.white-image {
+  filter: brightness(0) invert(1);
+}
+
+
