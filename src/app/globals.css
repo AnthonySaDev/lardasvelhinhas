@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Intro';
-  src: url('../fonts/introT.otf') format('opentype');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +10,7 @@
 }
 
 html {
-  font-family: 'Intro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth !important;
 }
 main{
@@ -26,7 +22,7 @@ a {
 }
 
 .headerClass{
-  background: rgba(130, 153, 149, 0.51);
+  background: rgba(117, 117, 117, 0.51);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.4px);

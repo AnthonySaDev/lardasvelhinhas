@@ -13,7 +13,7 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 1.2 }}
-      className="md:w-10/12 md:top-10 top-5 rounded-[8rem] text-white text-xs border-2 border-white tracking-widest items-center flex px-8 md:px-0 justify-between headerClass fixed left-0 right-0 mx-auto z-50 py-2"
+      className="md:w-11/12 md:top-10 top-5 rounded-[8rem] text-white text-xs border-2 border-white tracking-widest items-center flex px-8 md:px-0 justify-between headerClass fixed left-0 right-0 mx-auto z-50 py-2"
     >
 
       <div className="flex items-center gap-8 w-full md:px-5 justify-between">
@@ -106,7 +106,7 @@ export default function Header() {
   top: 4rem;
   right: 0.3rem;
   color: white;
-  background: #7A9D96;
+  background: rgba(117, 117, 117, 0.9);
   z-index: 99;
   padding: 1.5rem;
   border-bottom-left-radius: 2rem;
