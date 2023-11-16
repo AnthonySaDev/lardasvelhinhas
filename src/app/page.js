@@ -8,14 +8,15 @@ import pessoal from "../../public/pessoal.jpg";
 import about from "../../public/about.jpg";
 import doe from "../../public/doe.jpg";
 import homeback from "../../public/homeBackground.jpg";
-import box1 from '../../public/box1.png';
-import box2 from '../../public/box2.png';
-import box3 from '../../public/box3.png';
-import box4 from '../../public/box4.png';
-import box5 from '../../public/box5.png';
-import box6 from '../../public/box6.png';
-import anjos from '../../public/anjos.png';
-import masks from '../../public/maks.png';
+import box1 from "../../public/box1.png";
+import box2 from "../../public/box2.png";
+import box3 from "../../public/box3.png";
+import box4 from "../../public/box4.png";
+import box5 from "../../public/box5.png";
+import box6 from "../../public/box6.png";
+import anjos from "../../public/anjos.png";
+import masks from "../../public/maks.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -55,11 +56,11 @@ export default function Home() {
         </div>
         <motion.div
           className="text-center lg:flex items-center justify-center lg:pt-0"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/3 left-4 ">
+          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/3 bg-black bg-opacity-10 p-8 rounded-2xl ">
             <motion.h1
               className=" font-bold"
               initial={{ opacity: 0 }}
@@ -98,7 +99,7 @@ export default function Home() {
         </motion.div>
 
         <div className=" text-center text-black my-16 lg:px-8" id="sobre">
-          <h1 className="lg:text-[4rem] text-[2rem] font-bold text-left ">
+          <h1 className="lg:text-[4rem] text-[2rem] font-bold text-center my-10">
             Sobre o Lar
           </h1>
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-0  items-center justify-center">
@@ -125,14 +126,19 @@ export default function Home() {
                 entanto, para continuarmos a oferecer essa qualidade de vida,
                 contamos com a sua ajuda.
               </p>
-              <button className="bg-[#ED5A06] text-white font-bold text-[1.5rem] mt-5 hover:brightness-125 transition-all ease-in duration-300 px-10 py-2 rounded-[4rem] w-fit mx-auto">
-                ENVIE UMA MENSAGEM
-              </button>
+              <Link href="https://wa.me/553897470742?text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20ajudar%20">
+                <button className="bg-[#ED5A06] text-white font-bold text-[1.5rem] mt-5 hover:brightness-125 transition-all ease-in duration-300 px-10 py-2 rounded-[4rem] w-fit mx-auto">
+                  ENVIE UMA MENSAGEM
+                </button>
+              </Link>
             </div>
           </div>
         </div>
 
-        <div id="missao" className="bg-[#F0E7E3] w-full mt-16 text-black px-8 py-16">
+        <div
+          id="missao"
+          className="bg-[#F0E7E3] w-full mt-16 text-black px-8 py-16"
+        >
           <div className="flex lg:flex-row flex-col items-center gap-4 lg:gap-0 justify-between">
             <Image
               src={about}
@@ -141,7 +147,10 @@ export default function Home() {
             />
             <div className="px-4 lg:w-7/12 flex flex-col gap-4 text-[1.2rem]">
               <p>
-                <strong>No Lar das Velhinhas, nossa missão é simples, mas significativa: </strong>
+                <strong>
+                  No Lar das Velhinhas, nossa missão é simples, mas
+                  significativa:{" "}
+                </strong>
                 proporcionar cuidado e dignidade aos idosos que tanto fizeram
                 por nossa comunidade ao longo de suas vidas.
               </p>
@@ -156,27 +165,45 @@ export default function Home() {
                 dourados com alegria, conforto e amor. Junte-se a nós nessa
                 missão de honrar e cuidar de nossos idosos.
               </p>
-         
             </div>
           </div>
           <h1 className="text-[#ED5A06] mt-10 text-center text-[1.6rem] font-bold">
-              Seja parte dessa história de amor e dedicação que é o Lar das
-              Velhinhas..
-            </h1>
+            Faça parte dessa história de amor e dedicação que é o Lar das
+            Velhinhas...
+          </h1>
         </div>
 
-
-      <div id="box" className="bg-[#ED5A06] w-full flex items-center justify-center text-black px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center">
-          <Image src={box1} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
-          <Image src={box2} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
-          <Image src={box3} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
-          <Image src={box4} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
-          <Image src={box5} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
-          <Image src={box6} className="w-[350px] h-[250px] object-cover rounded-xl object-center"/>
+        <div
+          id="box"
+          className="bg-[#ED5A06] w-full flex items-center justify-center text-black px-8 py-20"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center">
+            <Image
+              src={box1}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+            <Image
+              src={box2}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+            <Image
+              src={box3}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+            <Image
+              src={box4}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+            <Image
+              src={box5}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+            <Image
+              src={box6}
+              className="w-[350px] h-[250px] object-cover rounded-xl object-center"
+            />
+          </div>
         </div>
-      </div>
-
 
         <div className="my-10 text-center text-black" id="ajude">
           <h1 className="text-[2rem] font-bold">Como Você Pode Ajudar:</h1>
@@ -186,49 +213,62 @@ export default function Home() {
             pode ajudar de várias maneiras:
           </p>
           <div className="flex lg:flex-row flex-col items-center justify-center gap-10 px-3 text-left text-[1rem]">
-           
-           <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
-            <Image src={anjos} className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"/>
-            <p>
-              <strong className="text-[1.5rem]">Doação financeira:</strong><br></br> Qualquer quantia faz a
-              diferença. Sua contribuição ajuda a cobrir despesas com
-              alimentação, cuidados médicos e atividades recreativas.<br></br>
-            </p>
-            <button className="bg-[#ED5A06] text-white px-4 rounded-lg text-[.9rem] h-[60px]">
-              <strong> Doe pelo Pix 16.923.245/0001-20</strong>
-            </button>
-           </div>
+            <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
+              <Image
+                src={anjos}
+                className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"
+              />
+              <p>
+                <strong className="text-[1.5rem]">Doação financeira:</strong>
+                <br></br> Qualquer quantia faz a diferença. Sua contribuição
+                ajuda a cobrir despesas com alimentação, cuidados médicos e
+                atividades recreativas.<br></br>
+              </p>
+              <h1 className="bg-[#ED5A06] cursor-text text-white px-4 rounded-lg text-[.9rem] py-6">
+                <strong> Doe pelo Pix 16.923.245/0001-20</strong>
+              </h1>
+            </div>
 
-           <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
-          <Image src={masks} className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"/>
-            <p>
-              <strong className="text-[1.5rem]">Doação de tempo:</strong><br></br> Se você puder dedicar seu tempo
-              como voluntário, será uma dádiva inestimável para nossos idosos.
-              Seja parte de sua jornada e compartilhe seu carinho.<br></br>
-            </p>
-            <button className="bg-[#ED5A06] text-white px-4 rounded-lg text-[.9rem] h-[60px]">
-              <strong>
-                 Rua Dom João Pimenta, 65 -
-                Centro,<br></br> Montes Claros - MG, 39400-003
-              </strong>
-            </button>
-          </div>
+            <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
+              <Image
+                src={masks}
+                className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"
+              />
+              <p>
+                <strong className="text-[1.5rem]">Doação de tempo:</strong>
+                <br></br> Se você puder dedicar seu tempo como voluntário, será
+                uma dádiva inestimável para nossos idosos. Seja parte de sua
+                jornada e compartilhe seu carinho.<br></br>
+              </p>
+              <h1 className="bg-[#ED5A06] cursor-text text-white px-4 rounded-lg text-[.9rem] py-4">
+          
+                <strong>
+                  Rua Dom João Pimenta, 65 - Centro,<br></br> Montes Claros -
+                  MG, 39400-003
+                </strong>
+              </h1>
+            </div>
 
-          <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
-          <Image src={doe} className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"/>
-            <p>
-              <strong className="text-[1.5rem]">Doação de suprimentos:</strong><br></br> Aceitamos doações de
-              alimentos, roupas, produtos de higiene e outros itens essenciais.
-              <br></br>
-            </p>
-            <button className="bg-[#ED5A06] text-white px-4 rounded-lg text-[.9rem] h-[60px]">
-              <strong>
-                 Para mais informações entre em contato:<br></br>(38) 3221-1299
-              </strong>
-            </button>
+            <div className="flex flex-col items-center justify-between h-[500px] text-center gap-4 lg:w-5/12">
+              <Image
+                src={doe}
+                className="lg:w-[200px] w-full h-[200px] object-cover rounded-[2rem]"
+              />
+              <p>
+                <strong className="text-[1.5rem]">
+                  Doação de suprimentos:
+                </strong>
+                <br></br> Aceitamos doações de alimentos, roupas, produtos de
+                higiene e outros itens essenciais.
+                <br></br>
+              </p>
+              <h1 className="bg-[#ED5A06] cursor-text text-white px-4 rounded-lg text-[.9rem] py-4">
+                <strong>
+                  Para mais informações entre em contato:<br></br>(38) 3221-1299
+                </strong>
+              </h1>
+            </div>
           </div>
-          </div>
-         
         </div>
       </main>
       <Footer />
