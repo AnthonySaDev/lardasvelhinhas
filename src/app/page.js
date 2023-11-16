@@ -126,7 +126,7 @@ export default function Home() {
                 entanto, para continuarmos a oferecer essa qualidade de vida,
                 contamos com a sua ajuda.
               </p>
-              <Link href="https://wa.me/553897470742?text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20ajudar%20">
+              <Link  target="_blank" href="https://wa.me/553897470742?text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20ajudar%20">
                 <button className="bg-[#ED5A06] text-white font-bold text-[1.5rem] mt-5 hover:brightness-125 transition-all ease-in duration-300 px-10 py-2 rounded-[4rem] w-fit mx-auto">
                   ENVIE UMA MENSAGEM
                 </button>
