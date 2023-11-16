@@ -60,7 +60,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/4 lg:w-3/5 w-full bg-black bg-opacity-10 p-8 rounded-2xl ">
+          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/4 lg:w-4/5 w-full bg-black bg-opacity-10 p-8 rounded-2xl ">
             <motion.h1
               className=" font-bold"
               initial={{ opacity: 0 }}
@@ -126,7 +126,7 @@ export default function Home() {
                 entanto, para continuarmos a oferecer essa qualidade de vida,
                 contamos com a sua ajuda.
               </p>
-              <Link  target="_blank" href="https://wa.me/553897470742?text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20ajudar%20">
+              <Link href="https://wa.me/553897470742?text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20ajudar%20">
                 <button className="bg-[#ED5A06] text-white font-bold text-[1.5rem] mt-5 hover:brightness-125 transition-all ease-in duration-300 px-10 py-2 rounded-[4rem] w-fit mx-auto">
                   ENVIE UMA MENSAGEM
                 </button>
