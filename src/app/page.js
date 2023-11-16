@@ -60,7 +60,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/3 bg-black bg-opacity-10 p-8 rounded-2xl ">
+          <div className="flex flex-col lg:text-[4rem] text-[2rem] absolute top-1/4 lg:w-3/5 w-full bg-black bg-opacity-10 p-8 rounded-2xl ">
             <motion.h1
               className=" font-bold"
               initial={{ opacity: 0 }}
