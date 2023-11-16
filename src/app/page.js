@@ -86,7 +86,7 @@ export default function Home() {
               Lar das Velhinhas
             </motion.h1>
             <motion.a
-              href="/#ajude"
+              href="/#sobre"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 1 }}
@@ -241,7 +241,6 @@ export default function Home() {
                 jornada e compartilhe seu carinho.<br></br>
               </p>
               <h1 className="bg-[#ED5A06] cursor-text text-white px-4 rounded-lg text-[.9rem] py-4">
-          
                 <strong>
                   Rua Dom João Pimenta, 65 - Centro,<br></br> Montes Claros -
                   MG, 39400-003
