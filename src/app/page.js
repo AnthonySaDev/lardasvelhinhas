@@ -67,7 +67,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              Sejam bem-vindos!
+              Sejam bem-vindos !
             </motion.h1>
             <motion.p
               className="lg:p-6 p-2 lg:w-7/12 mx-auto "
@@ -122,7 +122,7 @@ export default function Home() {
               </p>
               <p>
                 No Lar das Velhinhas, estamos comprometidos em proporcionar um
-                ambiente acolhedor e seguro para nossos residentes idosos. No
+                ambiente acolhedor e seguro para nossas residentes. No
                 entanto, para continuarmos a oferecer essa qualidade de vida,
                 contamos com a sua ajuda.
               </p>
@@ -151,7 +151,7 @@ export default function Home() {
                   No Lar das Velhinhas, nossa missão é simples, mas
                   significativa:{" "}
                 </strong>
-                proporcionar cuidado e dignidade aos idosos que tanto fizeram
+                proporcionar cuidado e dignidade as idosas que tanto fizeram
                 por nossa comunidade ao longo de suas vidas.
               </p>
               <p>
@@ -163,7 +163,7 @@ export default function Home() {
               <p>
                 Estamos empenhados em garantir que cada residente viva seus anos
                 dourados com alegria, conforto e amor. Junte-se a nós nessa
-                missão de honrar e cuidar de nossos idosos.
+                missão de honrar e cuidar de nossas idosas.
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function Home() {
           <h1 className="text-[2rem] font-bold">Como Você Pode Ajudar:</h1>
           <p className="lg:p-6 p-2 my-4 lg:w-7/12 mx-auto text-[1.2rem] font-thin ">
             Estamos sempre em busca de doações para garantir que possamos
-            oferecer os melhores cuidados possíveis aos nossos residentes. Você
+            oferecer os melhores cuidados possíveis as nossas residentes. Você
             pode ajudar de várias maneiras:
           </p>
           <div className="flex lg:flex-row flex-col items-center justify-center gap-10 px-3 text-left text-[1rem]">
@@ -237,7 +237,7 @@ export default function Home() {
               <p>
                 <strong className="text-[1.5rem]">Doação de tempo:</strong>
                 <br></br> Se você puder dedicar seu tempo como voluntário, será
-                uma dádiva inestimável para nossos idosos. Seja parte de sua
+                uma dádiva inestimável para nossas idosas. Seja parte de sua
                 jornada e compartilhe seu carinho.<br></br>
               </p>
               <h1 className="bg-[#ED5A06] cursor-text text-white px-4 rounded-lg text-[.9rem] py-4">

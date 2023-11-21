@@ -9,8 +9,8 @@ export default function Footer() {
         <h1 className=" text-2xl font-bold">Apoie o Lar das Velhinhas</h1>
         <p className="my-3 lg:w-3/4">
           Sua generosidade é o que mantém o Lar das Velhinhas funcionando e
-          proporcionando um lugar seguro e feliz para nossos residentes. Juntos,
-          podemos fazer a diferença na vida de nossos idosos.
+          proporcionando um lugar seguro e feliz para nossas residentes. Juntos,
+          podemos fazer a diferença na vida de nossas idosas.
         </p>
         <h1 className="text-2xl font-bold">Endereço:</h1>
         <p>Rua Dom João Pimenta, 65 - Centro, Montes Claros - MG, 39400-003</p>
@@ -25,7 +25,7 @@ export default function Footer() {
             <FaInstagram size={40} color="#E4367D" />
           </Link>
           <Link
-            href={"https://www.facebook.com/lardasvelhinhas/?locale=pt_BR"}
+            href={"https://www.facebook.com/lardasvelhinhas.moc"}
             target="_blank"
           >
             <FaFacebook size={40} color="#4867AA" />
